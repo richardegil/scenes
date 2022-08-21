@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+// require('./App.css');
+import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import { Home } from './pages/Home';
+import { Hold } from './pages/Hold';
+import { Countdown } from './pages/Countdown';
 
 function App() {
+  const [name] = useState('richardegil');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <Routes>
+        <Route path="/" element={<Home name={name} />} />
+        <Route path="/Hold" element={<Hold />} /> 
+        <Route path="/countdown" element={<Countdown />} />
+      </Routes>
+    </main>
+  )
 }
+
 
 export default App;
