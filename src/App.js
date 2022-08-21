@@ -13,7 +13,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home name={name} />} />
-        <Route path="/Hold" element={<Hold />} /> 
+        <Route path="/hold" element={<Hold />} /> 
         <Route path="/countdown" element={<Countdown />} />
       </Routes>
     </main>
