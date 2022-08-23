@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 
 export function Countdown() {
   const logoStyling = {
@@ -24,8 +25,9 @@ export function Countdown() {
     textAlign: "right",
     maxWidth: "8ch"
   };
-  
-  const [timer, setTimer] = useState(5);
+
+  const { start } = useParams();
+  const [timer, setTimer] = useState(start ? start : 5);
   const [timeText, setTimerText] = useState(`${timer}:00`);
   let time = timer * 60;
 
