@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home name={name} />} />
         <Route path="/hold" element={<Hold />} /> 
-        <Route path="/countdown" element={<Countdown />} />
+        <Route path="/countdown/:start" element={<Countdown />} />
       </Routes>
     </main>
   )
