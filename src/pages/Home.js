@@ -15,7 +15,7 @@ export function Home(props) {
   }
 
   const logoStyling = {
-    transform: "scale(0.75) translateY(34px)",
+    transform: "scale(0.75) translateY(30px)",
     justifySelf: "flex-end"
   }
 
