@@ -10,11 +10,13 @@ export function Home(props) {
     justifyContent: "space-between",
     width: "100%",
     height: "100px",
-    padding: "0 20px 20px 0"
+    padding: "0 20px 20px 0",
+    backgroundImage: "linear-gradient(168deg, rgba(17, 17, 17, 0) 80%, rgb(17, 17, 17) 100%)"
   }
 
   const logoStyling = {
-    transform: "scale(0.75)"
+    transform: "scale(0.75)",
+    justifySelf: "flex-end"
   }
 
   const socialStyling = {
