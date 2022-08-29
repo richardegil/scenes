@@ -30,7 +30,7 @@ main {
   left: 0;
   width: 1920px;
   height: 1080px;
-  background-color: var(--dark);
+  background-color: transparent;
   overflow: hidden;
 }
 
